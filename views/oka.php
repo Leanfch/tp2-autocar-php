@@ -1,10 +1,9 @@
 <?PHP
+if(!empty($_POST)){
 
 $name = $_POST['name'];
 $email = $_POST['emailAddress'];
-$mensaje = $_POST['message'];
-
-?>
+$mensaje = $_POST['message']; ?>
 <h1 class="text-center fs-1 mt-5 pt-5">Datos</h1>
 <div class="container d-flex justify-content-center">
   <div class="card text-dark p-3 fs-3 mb-5">
@@ -15,3 +14,8 @@ $mensaje = $_POST['message'];
     </ul>
   </div>
 </div>
+<?PHP } else { ?>
+  <div class="container">
+    <h2 class="my-5 text-center fs-2">Por favor rellene el formulario con datos válidos</h2>
+  </div>
+  <?PHP } ?>

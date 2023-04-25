@@ -7,12 +7,6 @@
   box-sizing: border-box;
 }
 
-/* :root {
-  --color-de-fondo: #b6b6b6;
-  --color-fondo-secundario: #464646;
-  --detalles: #f2981e;
-} */
-
 :root {
   --color-de-fondo: #FFFFFF;
   --color-fondo-secundario: #E5E5E5;
@@ -176,7 +170,7 @@ nav ul li {
 }
 
 .divHomeContainer {
-  background-color: var(--color-fondo-alternativo)
+  background: linear-gradient(to right, var(--color-fondo-alternativo), #203a6d);
 }
 
 .imgTrade,
