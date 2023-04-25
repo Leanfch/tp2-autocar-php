@@ -53,9 +53,8 @@ if (!array_key_exists($vista, $vistasValidas)) {
 
 <body>
   <header>
-    <div class="container">
       <nav class="navbar navbar-expand-lg fw-bold" data-bs-theme="white">
-        <div class="container-fluid">
+        <div class="container-fluid container">
           <a class="navbar-brand mx-5" href="index.php?vista=home">
             <img src="assets/autocar-logo.png" alt="Logo lefetech" width="150" height="50" class="d-inline-block align-text-top mt-1">
           </a>
@@ -97,7 +96,6 @@ if (!array_key_exists($vista, $vistasValidas)) {
           </div>
         </div>
       </nav>
-    </div>
   </header>
   <main>
     <?PHP
