@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* :root {
+  --color-de-fondo: #b6b6b6;
+  --color-fondo-secundario: #464646;
+  --detalles: #f2981e;
+} */
+
+:root {
+  --color-de-fondo: #FFFFFF;
+  --color-fondo-secundario: #E5E5E5;
+  --detalles: #FCA311;
+  --color-fondo-alternativo: #14213D;
+  --negro: #000000;
+}
+
+body {
+  background-color: var(--color-de-fondo);
+  font-family: 'Schibsted Grotesk', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.bannerContainer h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 4rem;
+  color: var(--color-de-fondo);
+  font-weight: 700;
+  margin: 0;
+}
+
+.buttonBanner {
+  text-decoration: none;
+  border-radius: 4px;
+  color: var(--negro);
+  background-color: var(--color-fondo-secundario);
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+h1,
+h2 {
+  color: var(--detalles);
+}
+
+nav,
+footer {
+  background-color: var(--color-fondo-secundario);
+  font-size: 1rem;
+}
+
+nav {
+  display: flex;
+  text-transform: uppercase;
+}
+
+nav ul li {
+  margin-right: 2rem;
+}
+
+.link-unstyled {
+  color: black;
+  text-decoration: none;
+}
+
+.kmFormat {
+  color: var(--color-fondo-alternativo);
+}
+
+.no-bold {
+  font-weight: 100;
+}
+
+.bannerContainer {
+  background-image: url(../assets/banner.jpg);
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.divBanner1 p {
+  color: var(--color-de-fondo);
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.divBanner1 {
+  width: 50%;
+}
+
+.divBanner2 {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.divBanner2 button {
+  padding: 1rem;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.divBanner2 a:hover {
+  background-color: #daa45a;
+}
+
+.errorDiv {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.rowHome {
+  display: flex;
+  align-items: center;
+}
+
+.rowHome2 {
+  display: flex;
+  align-items: center;
+}
+
+.precio-card {
+  color: var(--detalles);
+  font-weight: bolder;
+}
+
+.card:hover {
+  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 16px; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.divHome1,
+.divHome2,
+.divHome3,
+.divHome4 {
+  width: 49%;
+  /* border: 2px solid red; */
+  margin: 5rem 0;
+}
+
+.home-list {
+  list-style-type: none;
+  padding: 0;
+  color: var(--color-de-fondo);
+}
+
+.home-list-item {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  border-bottom: 2px solid;
+}
+
+.divHomeContainer {
+  background-color: var(--color-fondo-alternativo)
+}
+
+.imgTrade,
+.imgHome {
+  width: 100%;
+}
+
+.divNosotros {
+  font-size: 1.1rem;
+}
+
+.imgProducto {
+  width: 100vh;
+}
+
+.buttonReservar {
+  padding: 1rem;
+  border: none;
+  background-color: var(--detalles);
+  color: var(--negro);
+  border-radius: 5px;
+}
+
+.buttonReservar:hover {
+  background-color: var(--negro);
+  color: var(--color-de-fondo);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+
+.buttonVisita {
+  padding: 1rem;
+  border: none;
+  border: 3px solid var(--detalles);
+  background-color: var(--color-fondo-secundario);
+  color: var(--negro);
+  border-radius: 5px;
+}
+
+.buttonVisita:hover {
+  background-color: var(--negro);
+  color: var(--color-de-fondo);
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+
+.eventos {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-fondo-secundario);
+}
+
+.variedadMarcas {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  background-color: var(--color-fondo-secundario);
+}
+
+.h1Form {
+  color: var(--color-de-fondo);
+}
+
+.containerForm {
+  background: #007bff;
+  background: linear-gradient(to right, var(--color-fondo-alternativo), #203a6d);
+}
+
+.btnForm {
+  background-color: var(--detalles);
+  color: var(--negro);
+  font-weight: bold;
+}
+
+.btnForm:hover {
+  background-color: var(--negro);
+  color: var(--color-de-fondo);
+}
+
+.bg-image {
+  background-image: url(../assets/form.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 801px) {
+  .bannerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bannerContainer h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+  }
+
+  .divBanner1,
+  .divBanner2 {
+    width: 100%;
+    margin: 1rem;
+  }
+
+  .divHome1,
+  .divHome2,
+  .divHome3,
+  .divHome4 {
+    width: 100%;
+  }
+
+  .rowHome {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .eventos {
+    flex-direction: column;
+  }
+
+  .variedadMarcas {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+}
