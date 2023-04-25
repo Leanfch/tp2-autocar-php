@@ -53,49 +53,51 @@ if (!array_key_exists($vista, $vistasValidas)) {
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg fw-bold" data-bs-theme="white">
-      <div class="container-fluid">
-        <a class="navbar-brand mx-5" href="index.php?vista=home">
-          <img src="assets/autocar-logo.png" alt="Logo lefetech" width="150" height="50" class="d-inline-block align-text-top mt-1">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Vehículos
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="index.php?vista=catalogo&marca=chevrolet">Chevrolet</a></li>
-                <li><a class="dropdown-item" href="index.php?vista=catalogo&marca=audi">Audi</a></li>
-                <li><a class="dropdown-item" href="index.php?vista=catalogo&marca=bmw">BMW</a></li>
-                <li><a class="dropdown-item" href="index.php?vista=catalogo&marca=fiat">Fiat</a></li>
-                <li><a class="dropdown-item" href="index.php?vista=catalogo&marca=ford">Ford</a></li>
-                <li><a class="dropdown-item" href="index.php?vista=catalogo&marca=honda">Honda</a></li>
-                <li><a class="dropdown-item" href="index.php?vista=catalogo&marca=volkswagen">Volkswagen</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="index.php?vista=catalogo_completo">Ver todos</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="index.php?vista=contacto">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="index.php?vista=nosotros">Sobre Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="index.php?vista=alumno">Datos</a>
-            </li>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg fw-bold" data-bs-theme="white">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-5" href="index.php?vista=home">
+            <img src="assets/autocar-logo.png" alt="Logo lefetech" width="150" height="50" class="d-inline-block align-text-top mt-1">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Vehículos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="index.php?vista=catalogo&marca=chevrolet">Chevrolet</a></li>
+                  <li><a class="dropdown-item" href="index.php?vista=catalogo&marca=audi">Audi</a></li>
+                  <li><a class="dropdown-item" href="index.php?vista=catalogo&marca=bmw">BMW</a></li>
+                  <li><a class="dropdown-item" href="index.php?vista=catalogo&marca=fiat">Fiat</a></li>
+                  <li><a class="dropdown-item" href="index.php?vista=catalogo&marca=ford">Ford</a></li>
+                  <li><a class="dropdown-item" href="index.php?vista=catalogo&marca=honda">Honda</a></li>
+                  <li><a class="dropdown-item" href="index.php?vista=catalogo&marca=volkswagen">Volkswagen</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="index.php?vista=catalogo_completo">Ver todos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="index.php?vista=contacto">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="index.php?vista=nosotros">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="index.php?vista=alumno">Datos</a>
+              </li>
 
-          </ul>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
   <main>
     <?PHP
