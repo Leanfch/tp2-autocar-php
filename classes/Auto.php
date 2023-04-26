@@ -89,16 +89,17 @@ class Auto
    */
   public function catalogo_x_id(int $id): ?Auto
   {
-
+    if (!is_numeric($id)) {
+      return null;
+    }
+    
     $catalogo = $this->catalogo_completo();
-    if(is_int($id)){
+
     foreach ($catalogo as $v) {
       if ($v->id == $id) {
         return $v;
       }
-    }
     };
-    
     return null;
   }
 

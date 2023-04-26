@@ -1,8 +1,14 @@
 <?php
 require_once "classes/Auto.php";
 $idSeleccionada = $_GET['id'] ?? FALSE;
-$miObjeto = new Auto();
 
+if (is_numeric($idSeleccionada)) {
+  $idSeleccionada = intval($idSeleccionada);
+} else {
+  $idSeleccionada = FALSE;
+}
+
+$miObjeto = new Auto();
 $vehiculo = $miObjeto->catalogo_x_id($idSeleccionada);
 ?>
 
