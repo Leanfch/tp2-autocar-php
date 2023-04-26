@@ -2,6 +2,7 @@
 require_once "classes/Auto.php";
 $idSeleccionada = $_GET['id'] ?? FALSE;
 
+/*Definir si la $idSeleccionada es un número */
 if (is_numeric($idSeleccionada)) {
   $idSeleccionada = intval($idSeleccionada);
 } else {

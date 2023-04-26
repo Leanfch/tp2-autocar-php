@@ -1,15 +1,21 @@
 <?php
 require_once "classes/Auto.php";
 
-$marcaSeleccionada = $_GET['marca'] ?? FALSE;
+// Verificar que la marca indicada en la URL sea la correcta
+
+$marcas_permitidas = array('ford', 'chevrolet', 'audi', 'bmw', 'volkswagen', 'fiat');
+
+if (isset($_GET['marca']) && in_array($_GET['marca'], $marcas_permitidas)) {
+  $marcaSeleccionada = $_GET['marca'];
+} else {
+  $marcaSeleccionada = FALSE;
+}
 
 $objeto = new Auto();
 
 $catalogo = $objeto->catalogo_x_marca($marcaSeleccionada);
-
-?>
+if ($marcaSeleccionada) { ?>
 <div class="container">
-
   <h1 class="fw-bold text-center my-5">Autos usados</h1>
   <div class="row align-items-center">
     <!-- CARD -->
@@ -31,4 +37,8 @@ $catalogo = $objeto->catalogo_x_marca($marcaSeleccionada);
           </a>
         </div>
       </div>
-    <?PHP } ?>
+      <?PHP }} else { ?>
+    <div class="col">
+      <h2 class="text-center mt-5">No se encuentran los productos que desea</h2>
+    </div>
+  <?PHP } ?>
