@@ -91,12 +91,14 @@ class Auto
   {
 
     $catalogo = $this->catalogo_completo();
-
+    if(is_int($id)){
     foreach ($catalogo as $v) {
       if ($v->id == $id) {
         return $v;
       }
     }
+    };
+    
     return null;
   }
 
