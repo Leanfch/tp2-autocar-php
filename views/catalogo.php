@@ -3,7 +3,7 @@ require_once "classes/Auto.php";
 
 // Verificar que la marca indicada en la URL sea la correcta
 
-$marcas_permitidas = array('ford', 'chevrolet', 'audi', 'bmw', 'volkswagen', 'fiat');
+$marcas_permitidas = array('ford', 'chevrolet', 'audi', 'bmw', 'volkswagen', 'fiat', 'honda');
 
 if (isset($_GET['marca']) && in_array($_GET['marca'], $marcas_permitidas)) {
   $marcaSeleccionada = $_GET['marca'];
