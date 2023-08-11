@@ -1,0 +1,3 @@
+Admin: 		leandro_dv	leandro123
+Cliente: 	martin_dv	martin123
+SuperAdmin:	owner		owner123
